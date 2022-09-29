@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "54a2f723-189d-44f4-86c0-11b9b7e8e4bd",
+		"name": "OzanKarali",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23412282"
+	},
+	"item": [
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-API-Key",
+						"value": "bK5QwmRfe49nvaNSOn92Q9GarDue7SqW5RqtQudv",
+						"type": "text"
+					},
+					{
+						"key": "X-Flow-ID",
+						"value": "GKY7oDhpSiKY_gAAAABZ_A",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://iajyt0rjml.execute-api.eu-central-1.amazonaws.com/v1/products?product_ids=B15CR22N1,B46FT64N0,B27CS22G0&locale=de-DE&embed=productRelations%2CtechnicalDocuments&embed_only=true",
+					"protocol": "https",
+					"host": [
+						"iajyt0rjml",
+						"execute-api",
+						"eu-central-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "product_ids",
+							"value": "B15CR22N1,B46FT64N0,B27CS22G0"
+						},
+						{
+							"key": "locale",
+							"value": "de-DE"
+						},
+						{
+							"key": "embed",
+							"value": "productRelations%2CtechnicalDocuments"
+						},
+						{
+							"key": "embed_only",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product with ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-API-Key",
+						"value": "bK5QwmRfe49nvaNSOn92Q9GarDue7SqW5RqtQudv",
+						"type": "text"
+					},
+					{
+						"key": "X-Flow-ID",
+						"value": "GKY7oDhpSiKY_gAAAABZ_A",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://iajyt0rjml.execute-api.eu-central-1.amazonaws.com/v1/product/B15CR22N1?locale=de-DE&embed=productRelations%2CtechnicalDocuments&embed_only=true&productId=B15CR22N1",
+					"protocol": "https",
+					"host": [
+						"iajyt0rjml",
+						"execute-api",
+						"eu-central-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1",
+						"product",
+						"B15CR22N1"
+					],
+					"query": [
+						{
+							"key": "locale",
+							"value": "de-DE"
+						},
+						{
+							"key": "embed",
+							"value": "productRelations%2CtechnicalDocuments"
+						},
+						{
+							"key": "embed_only",
+							"value": "true"
+						},
+						{
+							"key": "productId",
+							"value": "B15CR22N1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product Variants with variantID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-API-Key",
+						"value": "bK5QwmRfe49nvaNSOn92Q9GarDue7SqW5RqtQudv",
+						"type": "text"
+					},
+					{
+						"key": "X-Flow-ID",
+						"value": "GKY7oDhpSiKY_gAAAABZ_A",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://iajyt0rjml.execute-api.eu-central-1.amazonaws.com/v1/product-variants/KIF42P60-02?locale=de-DE&embed=technicalDocuments&embed_only=true",
+					"protocol": "https",
+					"host": [
+						"iajyt0rjml",
+						"execute-api",
+						"eu-central-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1",
+						"product-variants",
+						"KIF42P60-02"
+					],
+					"query": [
+						{
+							"key": "locale",
+							"value": "de-DE"
+						},
+						{
+							"key": "embed",
+							"value": "technicalDocuments"
+						},
+						{
+							"key": "embed_only",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
